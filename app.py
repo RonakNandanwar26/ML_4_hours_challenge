@@ -4,11 +4,10 @@ import pickle
 import pandas as pd
 import streamlit as st 
 
-from PIL import Image
 
 
-pkl = open("classifier.pickle","rb")
-classifier=pickle.load(pkl)
+model = open("classifier.pickle","rb")
+classifier=pickle.load(model)
 
 
 def predict(col1,col2):
